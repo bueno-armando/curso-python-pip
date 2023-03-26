@@ -1,3 +1,9 @@
+GIT
+make a new commit:
+git add *
+git commit -m "commit name"
+git push origin master
+
 pwd => current directory
 mkdir => make directory
 ll => list sub folders
