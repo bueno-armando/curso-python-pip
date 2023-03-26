@@ -10,6 +10,7 @@ git add .
 status 
 git status
 
+pip3 freeeze => arbol de librerias
 pwd => current directory
 mkdir => make directory
 ll => list sub folders
