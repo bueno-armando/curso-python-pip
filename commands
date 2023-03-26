@@ -1,0 +1,15 @@
+pwd => current directory
+mkdir => make directory
+ll => list sub folders
+cd => change directory
+clear => clear terminal
+git init => initalize project in git
+touch => create file
+
+git remote -v => current repo
+
+dependencies
+
+build-eseentials
+libssl-dev
+libffi-dev
