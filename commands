@@ -26,3 +26,5 @@ dependencies
 build-eseentials
 libssl-dev
 libffi-dev
+
+which python3 => ubicacion de python3
