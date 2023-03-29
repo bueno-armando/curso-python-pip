@@ -8,7 +8,7 @@ python3 main.py
 ```
 
 # App Project
-(Virtual environment included)
+(Make a virtual environment to install dependencies)
 ```sh
 git clone
 cd app
