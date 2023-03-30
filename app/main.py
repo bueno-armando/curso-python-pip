@@ -1,14 +1,26 @@
 import csv_utils
 import utils
 import charts
+import pandas as pd
 
 def run():
-  data = csv_utils.read_csv('data.csv')
+  '''
   data = list(filter(lambda item : item['Continent'] == 'South America', data))
-
   countries = list(map(lambda x : x['Country/Territory'], data))
   percents = list(map(lambda x : x['World Population Percentage'], data))
-  charts.generate_pie_chart(countries, percents)
+  '''
+
+  dataFrames = pd.read_csv("data.csv")
+  # taking only south america countries with list comprehension
+  dataFrames = dataFrames[dataFrames['Continent'] == 'Africa']
+
+  countries = dataFrames['Country/Territory'].values
+  percents = dataFrames['World Population Percentage'].values
+
+  charts.generate_pie_chart(countries, percents) 
+  
+
+  data = csv_utils.read_csv('data.csv')
 
   country = input("Country => ")
 
